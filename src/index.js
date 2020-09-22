@@ -9,13 +9,13 @@ ReactDOM.render(
   <React.StrictMode>
     <Global
       styles={css`  
-    margin: 0;+
+    margin: 0;
     text-align: center;
   
-  
-}
+};
+
 body {
-  background-color: #12B0ff;
+  background-color: #f5f9fc;;
   color: #ffffff;
   
 `}
