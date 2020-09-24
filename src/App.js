@@ -5,7 +5,7 @@ import React from 'react';
 import { jsx, css } from '@emotion/core';
 import { pillButton, bluePillButton } from './Components/pillButton';
 import brainFoodLink from './Components/brainFoodLink.js';
-import { section1 } from './Components/section1.js';
+import { section1, styleMobile1 } from './Components/section1.js';
 import {
   section2,
   section2H1,
@@ -25,7 +25,7 @@ import {
   vikingStyle,
 } from './Components/section4';
 
-// import mobile1 from './Images/mobile1.png';
+import mobile1 from './Images/mobile1.PNG';
 import mobile2 from './Images/mobile2.png';
 import mobile3 from './Images/mobile3.png';
 import viking from './Images/viking.png';
@@ -52,12 +52,6 @@ const headings = css`
   font-weight: bold;
   padding: 100px 0px 0px;
   margin: 0;
-`;
-
-const styleMobile1 = css`
-  padding: 75px;
-  width: 200px;
-  height: 300px;
 `;
 
 const footerStyle = css`
@@ -99,7 +93,7 @@ function App() {
             <h1 css={headings}>
               Delightfully animated, <br></br>bite-sized knowloedge
             </h1>
-            <img css={styleMobile1} alt="mobile1" />
+            <img css={styleMobile1} alt="mobile1" src={mobile1} />
           </div>
           <div>
             <h2>Join our early access beta!</h2>

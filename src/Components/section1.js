@@ -9,4 +9,10 @@ const section1 = css`
   text-align: center;
 `;
 
-export { section1 };
+const styleMobile1 = css`
+  padding: 75px;
+  width: 250px;
+  height: 450px;
+`;
+
+export { section1, styleMobile1 };
