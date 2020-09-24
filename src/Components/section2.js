@@ -23,5 +23,11 @@ const section2TextBlock = css`
   line-height: 50px;
   font-weight: 400;
 `;
+const styleMobile2 = css`
+  width: 319px;
+  height: 657.25px;
+  border-radius: 40px;
+  padding: 80px 200px 100px;
+`;
 
-export { section2, section2H1, section2TextBlock };
+export { section2, section2H1, section2TextBlock, styleMobile2 };

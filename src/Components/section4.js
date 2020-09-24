@@ -28,4 +28,12 @@ const section4TextBlock = css`
   font-weight: 600;
 `;
 
-export { section4, section4H1, section4TextBlock };
+const vikingStyle = css`
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+`;
+
+export { section4, section4H1, section4TextBlock, vikingStyle };

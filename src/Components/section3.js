@@ -22,6 +22,15 @@ const section3TextBlock = css`
   font-size: 22px;
   line-height: 50px;
   font-weight: 400;
+  align-items: right;
 `;
 
-export { section3, section3H1, section3TextBlock };
+const styleMobile3 = css`
+  width: 319px;
+  height: 657.25px;
+  /* border-radius: 40px; */
+  padding: 80px 200px 100px;
+  margin: -420px 600px 0px;
+`;
+
+export { section3, section3H1, section3TextBlock, styleMobile3 };

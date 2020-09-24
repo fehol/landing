@@ -6,11 +6,26 @@ import { jsx, css } from '@emotion/core';
 import { pillButton, bluePillButton } from './Components/pillButton';
 import brainFoodLink from './Components/brainFoodLink.js';
 import { section1 } from './Components/section1.js';
-import { section2, section2H1, section2TextBlock } from './Components/section2';
-import { section3, section3H1, section3TextBlock } from './Components/section3';
-import { section4, section4H1, section4TextBlock } from './Components/section4';
+import {
+  section2,
+  section2H1,
+  section2TextBlock,
+  styleMobile2,
+} from './Components/section2';
+import {
+  section3,
+  section3H1,
+  section3TextBlock,
+  styleMobile3,
+} from './Components/section3';
+import {
+  section4,
+  section4H1,
+  section4TextBlock,
+  vikingStyle,
+} from './Components/section4';
 
-import mobile1 from './Images/mobile1.png';
+// import mobile1 from './Images/mobile1.png';
 import mobile2 from './Images/mobile2.png';
 import mobile3 from './Images/mobile3.png';
 import viking from './Images/viking.png';
@@ -45,31 +60,28 @@ const styleMobile1 = css`
   height: 300px;
 `;
 
-const styleMobile2 = css`
-  width: 319px;
-  height: 657.25px;
-  border-radius: 40px;
-  padding: 80px 200px 100px;
-`;
-
-const styleMobile3 = css`
-  width: 319px;
-  height: 657.25px;
-  border-radius: 40px;
-  padding: 80px 200px 100px;
-`;
-
-const vikingStyle = css`
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-`;
-
 const footerStyle = css`
-  height: 150px;
+  width: 100%;
+  display: flex;
+  height: 300px;
   background: #12b0ff;
+  text-align: left;
+  margin: 0px 50px 0px;
 `;
+
+const footerTextBlock = css`
+  width: 565px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  padding: 150px 50px;
+`;
+
+const socialIcons = css`
+  align-items: right;
+  margin: 100px;
+`;
+
 function App() {
   return (
     <>
@@ -87,7 +99,7 @@ function App() {
             <h1 css={headings}>
               Delightfully animated, <br></br>bite-sized knowloedge
             </h1>
-            <img css={styleMobile1} alt="mobile1" src={mobile1} />
+            <img css={styleMobile1} alt="mobile1" />
           </div>
           <div>
             <h2>Join our early access beta!</h2>
@@ -131,9 +143,14 @@ function App() {
         </section4>
       </main>
       <footer css={footerStyle}>
-        <div>
+        <a href="brain" css={brainFoodLink}>
+          brainfood
+        </a>
+        <div css={footerTextBlock}>
           brainfood © Copyright 2020 Brainfood, Inc. All rights reserved.
           Company Contact Us Jobs About Follow us
+        </div>
+        <div css={socialIcons}>
           <button>
             <img alt="#a" src={logo1} />
           </button>

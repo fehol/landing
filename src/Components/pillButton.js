@@ -21,7 +21,7 @@ const bluePillButton = css`
   background-color: #12b0ff;
   border: none;
   color: #ffffff;
-  padding: 13px 55px;
+  padding: 20px 50px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
